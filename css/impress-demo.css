@@ -98,7 +98,12 @@ body {
     /*background: -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));*/
     /*background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));*/
     /*background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));*/
-    background-image: url('BG-BlackHole.jpg');
+    transition: background 1s ease-in-out;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('BG-Universe.jpg');
+
 }
 
 /*
