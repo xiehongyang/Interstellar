@@ -89,7 +89,7 @@ table {
     want to leave anybody behind.
 */
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     min-height: 740px;
     /*background: rgb(215, 215, 215);*/
     /*background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));*/
@@ -99,7 +99,7 @@ body {
     /*background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));*/
     /*background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));*/
     transition: background 1s ease-in-out;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('BG-Universe.jpg');
