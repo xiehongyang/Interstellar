@@ -30,13 +30,14 @@
             margin-top: 100px;
         }
 
-        .Dic_pic {
-            width: 150px;
-            height: 150px;
-            position: relative;
-            top: 70px;
-            margin-left: 60px;
-        }
+        /*.Dic_pic {*/
+        /*width: 150px;*/
+        /*height: 150px;*/
+        /*position: relative;*/
+        /*top: 70px;*/
+        /*margin-left: 60px;*/
+
+        /*}*/
 
         .HideSlide {
             width: 2000px;
@@ -55,21 +56,40 @@
             position: relative;
             top: 66px;
             left: 98px;
+
         }
 
         .Jessica {
             position: relative;
             top: -191px;
             left: 457px;
+
         }
 
         .Caine {
             position: relative;
             top: -149px;
             left: 491px;
+
+        }
+
+        div > img {
+            box-shadow: 0 0 10px #000;
+        }
+
+        .VideoOfScience {
+            position: relative;
+            left: 13%;
+            top: 5%;
+
+        }
+
+        .StoryLine {
+            line-height: 45px;
+            position: relative;
+            top: -11px;
         }
     </style>
-
 </head>
 
 <body class="impress-supported">
@@ -82,7 +102,7 @@
 
 <div id="impress">
 
-    <div class="step slide" data-x="-5000" data-y="-1500">
+    <div class="step slide firstPage" data-x="-5000" data-y="-1500">
         <div class="FirstQ">A &nbsp;&nbsp;&nbsp;&nbsp;Question</div>
         <div class="Fq_Do">Do you ever consider about the <b>universe</b>?</div>
         <div class="Fq_Or">Or</div>
@@ -109,8 +129,11 @@
     </div>
 
     <div class="step slide" data-x="500" data-y="-200" data-rotate="30">
-        <b><i>Interstellar </i></b>is a 2014 epic science fiction film directed by <b>Christopher Nolan</b> and starring<b>Matthew
-        McConaughey</b> , <b>Anne Hathaway</b>, <b>Jessica Chastain</b>, and <b>Michael Caine</b>. The film features a
+        <b><i>Interstellar </i></b>is a 2014 epic science fiction film directed by <b>Christopher Nolan</b> and starring
+        <b>Matthew
+            McConaughey</b> , <b>Anne Hathaway</b>, <b>Jessica Chastain</b>, and <b>Michael Caine</b>.&nbsp; The film
+        features
+        a
         crew of astronauts who travel through a wormhole in search of a new home for humanity.<br>
         &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
@@ -140,23 +163,49 @@
             <img src="css/Caine.png" width="100" height="100"/>
         </div>
     </div>
+
     <div class="step slide" data-x="800" data-y="1500" data-rotate="45">
-        2
+        <h1 style="margin-top: -43px;">Storyline</h1>
+
+        <div class="StoryLine">In the near future, Earth has been devastated by drought and famine, causing a scarcity
+            in food and extreme
+            changes in climate. When humanity is facing extinction, a mysterious rip in the space-time continuum is
+            discovered, giving mankind the opportunity to widen its lifespan. A group of explorers must travel beyond
+            our solar system in search of a planet that can sustain life. The crew of the Endurance are required to
+            think bigger and go further than any human in history as they embark on an interstellar voyage into the
+            unknown. Coop, the pilot of the Endurance, must decide between seeing his children again and the future of
+            the human race.
+        </div>
     </div>
     <div class="step slide" data-x="2300" data-y="2200" data-rotate="0">
-        3
+
     </div>
-    <div class="step slide" data-x="4000" data-y="1500" data-rotate="135">
-        4
+    <div class="step" data-x="4000" data-y="1500" data-rotate="135">
+        <div class="VideoOfScience">
+            <video controls="controls" src="img/d9013528-b384-4abf-b3a3-236b905daaf3low.webm"
+                   style="width: 640px; height: 360px; box-shadow: 0 0 10px #000; "></video>
+        </div>
     </div>
     <div class="step slide" data-x="4100" data-y="-300" data-rotate="240">
-        5
+        <h1>About Music</h1>
+        The sound environment is just mesmerizing.It is a very important part of the movie, because some
+        scenes take place in space, and Noland just found the right way to use sound. The soundtrack is
+        breathtaking, epic, amazing, unreal. I could find a lot more adjectives to qualify
+        it, but you have to hear it to understand how epic they are.
     </div>
-    <div class="step slide" data-x="2300" data-y="-1100" data-rotate="360">
+    <div class="step slide" data-x="2300" data-y="-1100" data-rotate="360" onclick="showBH()">
         6
     </div>
-    <div id="overview" class="step" data-x="1200" data-y="1200" data-scale="10">
 
+    <!--3D dimension Viewing-->
+    <div id="overview" style="width:200px;height: 200px;" class="step" data-x="500" data-y="1000" data-rotate="720" data-scale="10">
+
+    </div>
+    <div class="step" data-x="-5000" data-y="-1000" data-rotate="720" data-scale="5">
+        <div class="VideoOfScienceOfBH">
+            <video controls="controls" src="img/MV5BZDI4MmFjM2UtMTkwNC00ODUyLTk5NTUtNzcyNGI1NzhmYWY5XkExMV5BbXA0XkFpbWRiLWV0cy10cmFuc2NvZGU@.mp4"
+                   style="width: 640px; height: 360px; box-shadow: 0 0 10px #000; "></video>
+        </div>
     </div>
     <!--<div class="step" data-x="-850" data-y="3000" data-rotate="90" data-scale="2">-->
     <!--<img src="css/AboutScience.png"/>-->
@@ -200,13 +249,19 @@
 <script>  impress().init();
 var i = 0;
 function changBG() {
+    var page= document.getElementsByClassName('firstPage');
+    page[0].style.display='none';
     if (i > 1) {
         return;
     }
     var bgMatrix = ["css/Interstellar.jpg", "css/BG-Universe.jpg"];
     document.body.style.backgroundImage = "url(" + bgMatrix[i] + ")";
     i++;
-}</script>
+}
+function showBH() {
+    document.body.style.backgroundImage = "url('css/BG-BlackHole.jpg')";
+}
+</script>
 
 
 </body>
