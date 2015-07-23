@@ -73,10 +73,6 @@
 
         }
 
-        div > img {
-            box-shadow: 0 0 10px #000;
-        }
-
         .VideoOfScience {
             position: relative;
             left: 13%;
@@ -87,13 +83,88 @@
         .StoryLine {
             line-height: 45px;
             position: relative;
-            top: -11px;
+            top: -27px;
+
         }
+
+        .VideoOfScienceOfTrailer {
+            border-radius: 171px;
+        }
+
+        .SpinPlanet {
+            -webkit-animation-name: spin;
+            -moz-animation-name: spin;
+            -o-animation-name: spin;
+            animation-name: spin;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            -o-animation-duration: 1s;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            -webkit-animation-play-state: running;
+            -moz-animation-play-state: running;
+            -o-animation-play-state: running;
+            animation-play-state: running;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        /*@keyframes spin {*/
+
+        /*from {*/
+        /*-webkit-transform: rotate(0deg)*/
+        /*}*/
+
+        /*to {*/
+        /*-webkit-transform: rotate(360deg)*/
+        /*}*/
+
+        /*}*/
+        .AboutScience {
+
+        }
+
+        .planet {
+            position: absolute;
+            width: 679px;
+            height: 679px;
+            left: 50%;
+            top: 50%;
+            margin-left: -339.5px;
+            margin-top: -339.5px;
+            transform-style: preserve-3d;
+            transform: translateX(0) translateY(100px) translateZ(-20px) rotateX(-110deg) rotateY(-6deg) rotateZ(0deg) scaleX(2.6) scaleY(1) scaleZ(1);
+
+        }
+
+        .round {
+            animation: z 5s linear 0s infinite;
+        }
+
+        @keyframes z {
+            from {
+                -webkit-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+                -moz-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+                -ms-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+                transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+            }
+            to {
+                -webkit-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(360deg) scaleX(1) scaleY(1) scaleZ(1);
+                -moz-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(360deg) scaleX(1) scaleY(1) scaleZ(1);
+                -ms-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(360deg) scaleX(1) scaleY(1) scaleZ(1);
+                transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(360deg) scaleX(1) scaleY(1) scaleZ(1);
+            }
+        }
+
     </style>
 </head>
 
 <body class="impress-supported">
-
+<div class="planet" id="planet" style="display: none;">
+    <img class="round" src="css/ttround.png">
+</div>
 <div class="fallback-message">
     <p>您的浏览器 <b>不支持impress.js所需的功能</b> , 所以提供了一个简化的版本演示.</p>
 
@@ -144,41 +215,55 @@
             &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             Christopher Nolan
-            <img src="css/Nolan.png" width="100" height="100"/>
+            <img src="css/Nolan.png" width="100" height="100" style=" box-shadow: 0 0 10px #000;"/>
         </div>
         <div class="McConaughey">
             Matthew McConaughey
-            <img src="css/McConaughey.png" width="100" height="100"/>
+            <img src="css/McConaughey.png" width="100" height="100" style=" box-shadow: 0 0 10px #000;"/>
         </div>
         <div class="Hathaway">
             Anne Hathaway
-            <img src="css/Hathaway.png" width="100" height="100"/>
+            <img src="css/Hathaway.png" width="100" height="100" style=" box-shadow: 0 0 10px #000;"/>
         </div>
         <div class="Jessica">
             Jessica Chastain
-            <img src="css/Jessica.png" width="100" height="100"/>
+            <img src="css/Jessica.png" width="100" height="100" style=" box-shadow: 0 0 10px #000;"/>
         </div>
         <div class="Caine">
             Michael Caine
-            <img src="css/Caine.png" width="100" height="100"/>
+            <img src="css/Caine.png" width="100" height="100" style=" box-shadow: 0 0 10px #000;"/>
         </div>
     </div>
 
     <div class="step slide" data-x="800" data-y="1500" data-rotate="45">
-        <h1 style="margin-top: -43px;">Storyline</h1>
+        <h1 style="margin-top: -43px;"><i>Storyline</i></h1>
 
         <div class="StoryLine">In the near future, Earth has been devastated by drought and famine, causing a scarcity
             in food and extreme
             changes in climate. When humanity is facing extinction, a mysterious rip in the space-time continuum is
-            discovered, giving mankind the opportunity to widen its lifespan. A group of explorers must travel beyond
-            our solar system in search of a planet that can sustain life. The crew of the Endurance are required to
-            think bigger and go further than any human in history as they embark on an interstellar voyage into the
+            discovered, giving <b>mankind</b> the opportunity to widen its lifespan. A group of explorers must travel
+            beyond
+            our solar system in search of a planet that can sustain life. The crew of the <b>Endurance</b> are required
+            to
+            think bigger and go further than any human in history as they <b>embark on</b> an interstellar voyage into
+            the
             unknown. Coop, the pilot of the Endurance, must decide between seeing his children again and the future of
             the human race.
         </div>
     </div>
     <div class="step slide" data-x="2300" data-y="2200" data-rotate="0">
+        <h1>About Scientific Accuracy</h1>
 
+        <div class="AboutScience">
+            Theoretical physicist Kip Thorne was a scientific consultant for the film to ensure the depictions of
+            wormholes
+            and relativity were as accurate as possible. "For the depictions of the wormholes and the black hole," he
+            said,
+            "we discussed how to go about it, and then I worked on the equations that would enable tracing of light rays
+            as
+            they traveled through a wormhole or around a black hole—so what you see is based on Einstein's general
+            relativity equations."
+        </div>
     </div>
     <div class="step" data-x="4000" data-y="1500" data-rotate="135">
         <div class="VideoOfScience">
@@ -194,48 +279,29 @@
         it, but you have to hear it to understand how epic they are.
     </div>
     <div class="step slide" data-x="2300" data-y="-1100" data-rotate="360" onclick="showBH()">
-        6
+        <h1>love is the one thing that transcends time and space</h1>
+        Love isn’t something that we invented. It’s observable. Powerful. It has to mean something. Maybe it means
+        something more, something we can’t yet understand. Maybe it’s some evidence, some artifact of a higher dimension
+        that we can’t consciously perceive. Love is the one thing that we’re capable of perceiving that transcends
+        dimensions of time and space. Maybe we should trust that, even if we can’t understand it.
     </div>
 
     <!--3D dimension Viewing-->
-    <div id="overview" style="width:200px;height: 200px;" class="step" data-x="500" data-y="1000" data-rotate="720" data-scale="10">
+    <div id="overview" style="width:200px;height: 200px;" class="step" data-x="500" data-y="1000" data-rotate="720"
+         data-scale="10">
 
     </div>
-    <div class="step" data-x="-5000" data-y="-1000" data-rotate="720" data-scale="5">
-        <div class="VideoOfScienceOfBH">
-            <video controls="controls" src="img/MV5BZDI4MmFjM2UtMTkwNC00ODUyLTk5NTUtNzcyNGI1NzhmYWY5XkExMV5BbXA0XkFpbWRiLWV0cy10cmFuc2NvZGU@.mp4"
+    <div class="step" data-x="-5000" data-y="4000" data-rotate="720" data-scale="0.5">
+        <div class="SpinPlanet" id="SpinPlanet" onclick="DoNotSpin()">
+            <video class="VideoOfScienceOfTrailer" controls="controls"
+                   src="img/MV5BZDI4MmFjM2UtMTkwNC00ODUyLTk5NTUtNzcyNGI1NzhmYWY5XkExMV5BbXA0XkFpbWRiLWV0cy10cmFuc2NvZGU@.mp4"
                    style="width: 640px; height: 360px; box-shadow: 0 0 10px #000; "></video>
         </div>
     </div>
-    <!--<div class="step" data-x="-850" data-y="3000" data-rotate="90" data-scale="2">-->
-    <!--<img src="css/AboutScience.png"/>-->
-    <!--</div>-->
-
-
-    <!--<div id="its-in-3d" class="step" data-x="6200" data-y="4500" data-z="-100" data-rotate-x="-40" data-rotate-y="10"-->
-    <!--data-scale="2">-->
-    <!--<h3>三维、图形与特效</h3>-->
-
-    <!--<p><span class="have">3D效果</span><span class="you">来了</span><span class="noticed">注意！</span></p>-->
-
-    <!--<p><span class="its">CSS3-3D</span> <span class="in">in</span> <b>WebGL<sup>*</sup></b></p>-->
-    <!--<a class="footnote" target="_blank" href="http://dyhdemo.sinaapp.com/game/rubiks/index.html">* 3D魔方 案例</a>-->
-    <!--</div>-->
-
-
-    <!--<div id="media" class="step" data-x="3500" data-y="3500" data-z="1000" data-scale="3">-->
-    <!--<h3>多媒体</h3>-->
-
-    <!--<p> 视频：-->
-    <!--<video controls="controls" src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" width="600px"></video>-->
-    <!--</p>-->
-    <!--</div>-->
-
-    <!--<div id="over" class="step" data-x="3800" data-y="4000" data-rotate="60" data-z="-2000" data-scale="1">-->
-    <!--THANK&nbsp;&nbsp;YOU-->
-    <!--</div>-->
-
-
+    <div class="step slide" data-x="-4880" data-y="4090" data-z="-800" data-rotate="720" data-rotate-y="180"
+         data-scale="0.01">
+        Thanks for the <b>EVERYONE</b>!
+    </div>
 </div>
 
 <script>
@@ -249,8 +315,8 @@
 <script>  impress().init();
 var i = 0;
 function changBG() {
-    var page= document.getElementsByClassName('firstPage');
-    page[0].style.display='none';
+    var page = document.getElementsByClassName('firstPage');
+    page[0].style.display = 'none';
     if (i > 1) {
         return;
     }
@@ -259,7 +325,13 @@ function changBG() {
     i++;
 }
 function showBH() {
+    var planet = document.getElementById('planet');
+    planet.style.display = 'block';
     document.body.style.backgroundImage = "url('css/BG-BlackHole.jpg')";
+}
+function DoNotSpin() {
+    var a = document.getElementById('SpinPlanet');
+    a.className = '';
 }
 </script>
 
